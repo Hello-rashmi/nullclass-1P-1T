@@ -1,0 +1,35 @@
+#conversion to lower case
+text = input("Please enter a sentence: ")
+lower_text = text.lower()
+print("Converted to lowercase:\n", lower_text)
+
+
+#removal of special characters
+import re
+text = input("Type your sentence here: ")
+clean_text = re.sub(r'[^\w\s]', '', text)
+print("Text after removing special characters:\n", clean_text)
+
+
+
+#tokenization
+import nltk
+nltk.download('punkt_tab')
+from nltk.tokenize import word_tokenize
+text = input("Enter the text:")
+w = word_tokenize(text)
+print(w)
+
+
+
+
+#combined features
+import re
+from nltk.tokenize import word_tokenize
+text = input("Enter the text")
+lowercase = text.lower()
+print(lowercase)
+w = word_tokenize(text)
+print(w) 
+sanitized_text = re.sub(r'[^\w\s]', '', text)
+print("Cleaned text:\n", sanitized_text)
