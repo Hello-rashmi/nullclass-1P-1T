@@ -1,0 +1,108 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "gpuType": "T4",
+      "authorship_tag": "ABX9TyOBp8BJx2Qp1gPAApZ9NN0e",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "accelerator": "GPU"
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Hello-rashmi/nullclass-1P-1T/blob/main/text%20cleaning\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#conversion to lower case\n",
+        "text = input(\"Please enter a sentence: \")\n",
+        "lower_text = text.lower()\n",
+        "print(\"Converted to lowercase:\\n\", lower_text)"
+      ],
+      "metadata": {
+        "id": "jyJPDq2wst-q"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#removal of special characters\n",
+        "import re\n",
+        "text = input(\"Type your sentence here: \")\n",
+        "clean_text = re.sub(r'[^\\w\\s]', '', text)\n",
+        "print(\"Text after removing special characters:\\n\", clean_text)\n"
+      ],
+      "metadata": {
+        "id": "6q4lXpWi2Mdu"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#tokenization\n",
+        "import nltk\n",
+        "nltk.download('punkt_tab')\n",
+        "from nltk.tokenize import word_tokenize\n",
+        "text = input(\"Enter the text:\")\n",
+        "w = word_tokenize(text)\n",
+        "print(w)\n"
+      ],
+      "metadata": {
+        "id": "lDK-UZOU3HDg"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#combined features\n",
+        "import re\n",
+        "from nltk.tokenize import word_tokenize\n",
+        "text = input(\"Enter the text\")\n",
+        "lowercase = text.lower()\n",
+        "print(lowercase)\n",
+        "w = word_tokenize(text)\n",
+        "print(w)\n",
+        "sanitized_text = re.sub(r'[^\\w\\s]', '', text)\n",
+        "print(\"Cleaned text:\\n\", sanitized_text)\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "fipKA8Ib4Gra"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "rjXngEyN4vc7"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
