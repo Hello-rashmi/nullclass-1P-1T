@@ -1,0 +1,3 @@
+nltk - for tokenization
+'Re' is already updated in python.
+GPU is needed.
