@@ -1,5 +1,8 @@
 # nullclass-1P-1T
-Developed a model that generates images from natural language text prompts using pre-trained diffusion models like Stable Diffusion. It translates textual descriptions into realistic or artistic visuals, combining NLP and computer vision.
+This task involves three subtasks :
+1.Conversion to lower letters,
+2.Removal of special letters,
+3.Tokenization
 
 # HOW TO RUN
 1. copy the code.
@@ -8,12 +11,10 @@ Developed a model that generates images from natural language text prompts using
 4. enter the favorable text and you can see the convenient output.
 
 # ipynb file
-https://drive.google.com/file/d/1s1C8CwukoK-nbRr_SQZm2g5F7QycuJXw/view?usp=drive_link
+https://drive.google.com/file/d/1DGPrhax8mSK0nRiw6-JvZ-GLimyYqN7c/view?usp=drive_link
 
 # Learnings
-1.Understood how different models like Stablediffusion or DALLe works.
-2.learnt to integrate dataset with deep learning models.
-3.Integrated experience with NLP and computer vision.
-4.Improved skills in libraries like Hugging Face ,PyTorch and Transformers. 
-5.Explored text prompts and image correlations.
-
+1.Understood the importance of text preprocessing in NLP and ML.
+2.Learn to convert raw data into clean and usable form.
+3. Applied lowercasing, special character removal, and tokenization
+4.Explored basic Python string functions and regular expressions
